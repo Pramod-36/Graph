@@ -7,7 +7,7 @@ int main() {
     cin >> nodes >> edges; 
     vector<vector<int> > adj_list(nodes + 1);
     int node1, node2;
-    for(int i = 0; i < nodes; ++i) {
+    for(int i = 0; i < edges; ++i) {
         cin >> node1 >> node2;
         adj_list[node1].push_back(node2);
         adj_list[node2].push_back(node1);
