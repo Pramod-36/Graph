@@ -13,7 +13,7 @@ int main() {
         adj_matrix[node2].push_back(node1);
     }
     for(int i = 1; i <= nodes; ++i) {
-        cout << i << ": i";
+        cout << i << ": ";
         for(int j = 0; j <  adj_matrix[i].size(); ++j) {
             cout << adj_matrix[i][j] << " ";
         }
