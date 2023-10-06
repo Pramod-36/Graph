@@ -10,8 +10,8 @@ int main() {
     int node1, node2;
     for(int i = 0; i < number_of_edges; ++i) {
         cin >> node1 >> node2;
-        adj_matrix[node1 - 1][node2 - 1] = 1;
-        adj_matrix[node2 - 1][node1 - 1] = 1; // For Undirected Graph if its directed we omit this line 
+        adj_matrix[node1][node2] = 1;
+        adj_matrix[node2][node1] = 1; // For Undirected Graph if its directed we omit this line 
     }
     
     for(int i = 0; i < nodes; ++i) {
